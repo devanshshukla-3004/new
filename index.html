@@ -57,6 +57,61 @@ document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector
 </div>
 </div>
 </section>
+<!-- TOP PERFORMERS / CAREER DESTINATIONS -->
+<section id="top-performers" class="w-full bg-surface py-16 md:py-20 border-b border-outline-variant/30 overflow-hidden">
+  <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+    <div class="text-center mb-8 md:mb-10">
+      <span class="font-label-ui text-xs font-semibold text-primary-container uppercase tracking-wider">Learner Success</span>
+      <h2 class="mt-2 font-headline-md text-headline-md text-white font-bold">Our Top Performers</h2>
+      <p class="mt-2 text-sm text-on-surface-variant">Celebrating learner ambition and career goals across the technology industry.</p>
+    </div>
+    <div class="performer-marquee" aria-label="Technology career destinations">
+      <div class="performer-track">
+        <div class="performer-set">
+          <article class="performer-card"><div class="performer-avatar"><span>IC</span></div><span class="performer-company">ICAD</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>TE</span></div><span class="performer-company">Tata Elec.</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>WF</span></div><span class="performer-company">Whatfix</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>AB</span></div><span class="performer-company">Axis Bank</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>TI</span></div><span class="performer-company">Telus Int.</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>FL</span></div><span class="performer-company">Flipkart</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>WM</span></div><span class="performer-company">Walmart</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>AZ</span></div><span class="performer-company">Amazon</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>WM</span></div><span class="performer-company">Walmart</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>ZS</span></div><span class="performer-company">ZS Asso.</span></article>
+        </div>
+        <div class="performer-set" aria-hidden="true">
+          <article class="performer-card"><div class="performer-avatar"><span>IC</span></div><span class="performer-company">ICAD</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>TE</span></div><span class="performer-company">Tata Elec.</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>WF</span></div><span class="performer-company">Whatfix</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>AB</span></div><span class="performer-company">Axis Bank</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>TI</span></div><span class="performer-company">Telus Int.</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>FL</span></div><span class="performer-company">Flipkart</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>WM</span></div><span class="performer-company">Walmart</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>AZ</span></div><span class="performer-company">Amazon</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>WM</span></div><span class="performer-company">Walmart</span></article>
+          <article class="performer-card"><div class="performer-avatar"><span>ZS</span></div><span class="performer-company">ZS Asso.</span></article>
+        </div>
+      </div>
+    </div>
+    <p class="mt-4 text-center text-[11px] text-on-surface-variant">Career destinations shown for visual reference. Add verified learner names and placement details before publishing placement claims.</p>
+  </div>
+</section>
+<style>
+.performer-marquee{width:100%;overflow:hidden;mask-image:linear-gradient(to right,transparent,black 3%,black 97%,transparent)}
+.performer-track{display:flex;width:max-content;animation:performer-scroll 38s linear infinite}
+.performer-marquee:hover .performer-track{animation-play-state:paused}
+.performer-set{display:flex;align-items:stretch;gap:16px;padding-right:16px}
+.performer-card{width:90px;min-width:90px;min-height:122px;padding:13px 8px 11px;border:1px solid rgba(76,215,246,.18);border-radius:12px;background:rgba(26,31,45,.68);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:12px;transition:transform .22s,border-color .22s,background .22s}
+.performer-card:hover{transform:translateY(-4px);border-color:rgba(0,210,255,.65);background:rgba(26,45,60,.9)}
+.performer-avatar{width:58px;height:58px;border-radius:10px;background:linear-gradient(145deg,#d6dce5,#aebdca);display:grid;place-items:center;overflow:hidden;position:relative}
+.performer-avatar:before{content:"";position:absolute;width:22px;height:22px;border-radius:50%;top:10px;background:#526477;box-shadow:0 19px 0 9px #26394d}
+.performer-avatar:after{content:"";position:absolute;width:42px;height:20px;border-radius:50% 50% 0 0;bottom:-9px;background:#26394d}
+.performer-avatar span{position:absolute;z-index:2;bottom:2px;font-size:6px;letter-spacing:.1em;font-weight:800;color:#eef7ff;background:rgba(12,24,40,.7);padding:2px 4px;border-radius:3px}
+.performer-company{font-size:11px;line-height:1.2;color:#b9c9df;text-align:center;white-space:nowrap}
+@keyframes performer-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:640px){.performer-set{gap:10px;padding-right:10px}.performer-card{width:84px;min-width:84px;min-height:116px}.performer-track{animation-duration:30s}}
+@media(prefers-reduced-motion:reduce){.performer-track{animation:none}.performer-card{transition:none}}
+</style>
 <!-- =========================================================================
        SECTION 2: VERIFIED HIRING ECOSYSTEM & STRUCTURAL ENGINEERING PILLARS
        ========================================================================= -->
